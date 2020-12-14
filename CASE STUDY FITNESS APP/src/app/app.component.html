@@ -1,0 +1,73 @@
+<div class="logo">
+  <nav class="navbar navbar-light blue lighten-4">
+    <span class="navbar-brand" style="margin:auto; display:table; color: white;">
+
+
+      <H2>Fitness Tracker App</H2></span>
+  </nav>
+
+</div>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+  <button type="button" class="btn btn-warning btn-lg" (click)="landingpage()">Home</button><br>
+  <button type="button" class="btn btn-warning btn-lg" (click)="placeAppointment()">Place Appointment</button><br>
+  <button type="button" class="btn btn-warning btn-lg" (click)="viewAppointment()">View Appointment</button><br>
+  <button type="button" class="btn btn-warning btn-lg" (click)="viewAppointment()">Search</button><br>
+  <button type="button" class="btn btn-warning btn-lg" (click)="contactUspage()">Contact Us</button>
+
+
+
+
+
+</div>
+</nav>
+
+
+<div class="container-fluid bg-danger">
+
+
+  <div class="row">
+    <div class="col-4">
+
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-8">
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+<div class="container">
+
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <div class="nav flex-column nav-pills"  aria-orientation="vertical">
+        <br>
+        <br>
+        <button class="btn btn-primary" (click)="landingpage()">Home</button><br>
+        <button class="btn btn-primary"(click)="placeAppointment()">Place Appointment</button><br>
+        <button class="btn btn-primary"(click)="viewAppointment()">View Appointment</button><br>
+        <button class="btn btn-primary"(click)="viewAppointment()">Search</button><br>
+        <button class="btn btn-primary"(click)="contactUspage()">Contact Us</button><br>
+
+      </div>
+
+    </div>
+    <div class="col-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  </div>
+  <hr>
+    <button type="button" class="btn btn-primary btn-lg btn-block" style="margin-left: 200px; height: 100px; width: 900px;" (click)="landingpage()">Apply For Trainer</button>
+    </div>
